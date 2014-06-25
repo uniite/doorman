@@ -1,7 +1,7 @@
 module.exports = {
   // port to listen on
-  port: 8085,
-  hostname: 'https://example.com',
+  port: process.env.PORT,
+  hostname: process.env.HOSTNAME,
 
   proxyTo: {
     host: process.env.PROXY_HOST,
