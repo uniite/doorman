@@ -4,8 +4,8 @@ module.exports = {
   hostname: 'https://example.com',
 
   proxyTo: {
-    host: 'ubuntu.home',
-    port: 80
+    host: process.env.PROXY_HOST,
+    port: process.env.PROXY_PORT
   },
 
   sessionSecret: 'AeV8Thaieel0Oor6shainu6OUfoh3ohwZaemohC0Ahn3guowieth2eiCkohhohG4', // change me
