@@ -8,7 +8,7 @@ module.exports = {
     port: process.env.PROXY_PORT
   },
 
-  sessionSecret: 'AeV8Thaieel0Oor6shainu6OUfoh3ohwZaemohC0Ahn3guowieth2eiCkohhohG4', // change me
+  sessionSecret: process.env.SESSION_SECRET,
 
   modules: {
     // Register a new oauth app on Google Apps at
