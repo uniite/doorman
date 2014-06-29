@@ -16,7 +16,7 @@ module.exports = {
     google: {
       appId: process.env.GOOGLE_APP_ID,
       appSecret: process.env.GOOGLE_APP_SECRET,
-      requiredDomain: 'jbotelho.com'
+      allowedEmails: (process.env.GOOGLE_ALLOWED_EMAILS || "").split(",")
     }
   }
 };
